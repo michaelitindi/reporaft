@@ -1,16 +1,17 @@
 [general]
-title = "Cafe Directory"
+title = "Reporaft"
 logo = ""
-iconLogo = "tabler:coffee"
+iconLogo = "tabler:license"
 
 [general.seo]
-name = "Cafe Directory"
-description = "Find the best nuxt starter kits."
+name = "Reporaft"
+description = "A directory for finding cool projects that are licensed with MIT License."
 url = "https://nuxtstarters.com"
 
 [directory.data]
 source = "json"  # default, mock, sheets, json
-links = "normal"
+links = "outbound"
+target = "_blank"
 
 # [directory.data.sheets]
 # key = "1BKVVFysQT8ZuPY8hUp--jwTrN-U20TrtML0idECIWmc"
@@ -20,9 +21,9 @@ links = "normal"
 # table = "Table Name"
 
 [directory.search]
-placeholder = "Search among {0} agent frameworks"
+placeholder = "Search {0} MIT-licensed projects..."
 showCount = true
-icon = "tabler:bow"
+icon = "tabler:search"
 
 [directory.search.tags]
 display = "show-all" # options: none,select,show-all
@@ -33,19 +34,19 @@ list = false
 type = ""
 
 [directory.grid.emptyState]
-text = "Seems that this entry is missing from the archives."
+text = "No projects found matching your search."
 type = "button"                                              # options: button, simple, link
 icon = "tabler:exclamation-mark"
 
 [directory.grid.card]
-image = true
+image = false
 border = "shadow" # options: dashed, shadow, outline
 
 [directory.grid.submit]
 show = true
 first = false
-title = "Submit a template"
-description = "Submit a template to show off a good project to other people."
+title = "Submit a Project"
+description = "Share your MIT-licensed project with the community."
 hideable = true
 
 [directory.featured]
@@ -55,20 +56,40 @@ icon = "tabler:star"
 labelForCard = "Featured ✨"
 
 [directory.tagPages]
-title = "{0} Frameworks"
+title = "{0} Projects"
 
 [[directory.tags]]
-key = "code"
-name = "Code Based"
+key = "framework"
+name = "Frameworks"
+color = "slate"
+
+[[directory.tags]]
+key = "library"
+name = "Libraries"
+color = "zinc"
+
+[[directory.tags]]
+key = "javascript"
+name = "JavaScript"
+color = "yellow"
+
+[[directory.tags]]
+key = "python"
+name = "Python"
+color = "yellow"
+
+[[directory.tags]]
+key = "frontend"
+name = "Frontend"
 color = "blue"
 
 [[directory.tags]]
-key = "visual"
-name = "Visual Based"
-color = "green"
+key = "web"
+name = "Web"
+color = "indigo"
 
 [header.banner]
-show = true
+show = false
 text = "Follow mark_bruderer on twitter."
 link = "https://x.com/intent/follow?screen_name=mark_bruderer"
 brandText = "AI Agent Libraries"
@@ -86,8 +107,8 @@ href = "https://us.posthog.com/shared/vHlGCcSqPjGH4r_QijaXSETtmN9J-g"
 target = "_blank"
 
 [header.actionButton]
-text = "Submit a starter"
-href = "https://tally.so"
+text = "Submit a Project"
+href = "https://github.com/michaelitindi/mitlicensedcode"
 
 [footer]
 description = "Best directory for my niche."

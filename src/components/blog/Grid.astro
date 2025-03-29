@@ -5,7 +5,12 @@ import PureGrid from "../directory/PureGrid.astro";
 const allListings = await getCollection("blog");
 const blogListings = allListings.map((value) => ({
   ...value,
-  id: `blog/${value.id}`,
+  id: value.id,  // This will be 'test' for test.md
+  link: `/blog/${value.id}`,  // This creates the /blog/test link
+  data: {
+    ...value.data,
+  },
+  isBlogPost: true  // Add this flag to identify blog posts
 }));
 ---
 

@@ -1,142 +1,178 @@
 [
   {
-    "id": "calm",
-    "title": "Calm",
-    "card_image": "",
-    "description": "Offers guided meditations, sleep stories, and calming music to help users relax and improve sleep.",
-    "link": "https://minteddirectory.com"
+    "id": "unopim",
+    "title": "UnoPim",
+    "description": "A free and open source Laravel-based Product Information Management (PIM) system",
+    "link": "https://github.com/unopim/unopim",
+    "tags": ["laravel", "pim", "management"],
+    "featured": true
   },
   {
-    "id": "headspace",
-    "title": "Headspace",
-    "card_image": "",
-    "description": "Provides a variety of guided meditations, sleep content, and mindfulness exercises for daily use.",
-    "link": "https://minteddirectory.com"
+    "id": "aureuserp",
+    "title": "Aureus ERP",
+    "description": "Free and Open Source ERP platform built on Laravel",
+    "link": "https://github.com/aureuserp/aureuserp",
+    "tags": ["laravel", "erp", "business"],
+    "featured": true
   },
   {
-    "id": "insight-timer",
-    "title": "Insight Timer",
-    "card_image": "",
-    "description": "Features a vast library of guided meditations, talks, and music tracks from teachers worldwide.",
-    "link": "https://minteddirectory.com"
+    "id": "umami",
+    "title": "Umami",
+    "description": "Simple, fast, privacy-focused alternative to Google Analytics",
+    "link": "https://github.com/umami-software/umami",
+    "tags": ["javascript", "analytics", "tracking"],
+    "featured": true
   },
   {
-    "id": "buddhify",
-    "title": "Buddhify",
-    "card_image": "",
-    "description": "Customizable meditation sessions for various situations, with a one-time payment model.",
-    "link": "https://minteddirectory.com"
+    "id": "ghost",
+    "title": "Ghost",
+    "description": "Professional publishing platform built on Node.js",
+    "link": "https://github.com/TryGhost/Ghost",
+    "tags": ["node.js", "cms", "publishing"],
+    "featured": true
   },
   {
-    "id": "smiling-mind",
-    "title": "Smiling Mind",
-    "card_image": "",
-    "description": "A non-profit app designed by psychologists, offering mindfulness programs for different age groups and settings.",
-    "link": "https://minteddirectory.com"
+    "id": "oxygen",
+    "title": "Oxygen",
+    "description": "A lightweight and flexible PHP framework",
+    "link": "https://github.com/baconbro/Oxygen",
+    "tags": ["php", "framework", "web"],
+    "featured": false
   },
   {
-    "id": "meditopia",
-    "title": "Meditopia",
-    "card_image": "",
-    "description": "Focuses on sleep and stress reduction with guided meditations in multiple languages.",
-    "link": "https://minteddirectory.com"
+    "id": "laravel-crm",
+    "title": "Krayin CRM",
+    "description": "Free and open source Laravel CRM solution",
+    "link": "https://github.com/krayin/laravel-crm",
+    "tags": ["laravel", "crm", "business"],
+    "featured": true
   },
   {
-    "id": "happier",
-    "title": "10% Happier",
-    "card_image": "",
-    "description": "Teaches meditation through videos, guided sessions, and a personal coaching feature.",
-    "link": "https://minteddirectory.com"
+    "id": "hotelhub",
+    "title": "HotelHub",
+    "description": "Advanced hotel booking management system with multi-user roles support",
+    "link": "https://github.com/KhaledAshrafH/HotelHub",
+    "tags": ["java", "booking", "management"],
+    "featured": true
   },
   {
-    "id": "simple-habit",
-    "title": "Simple Habit",
-    "card_image": "",
-    "description": "Offers short, 5-minute meditations for busy individuals, with sessions led by mindfulness experts.",
-    "link": "https://minteddirectory.com"
+    "id": "minted-directory",
+    "title": "Minted Directory",
+    "description": "Markdown-driven directory template built with Astro and TailwindCSS",
+    "link": "https://github.com/masterkram/minted-directory-astro",
+    "tags": ["astro", "directory", "template"],
+    "featured": true
   },
   {
-    "id": "aura",
-    "title": "Aura",
-    "card_image": "",
-    "description": "Personalized mindfulness meditations, stories, and coaching to reduce stress and anxiety.",
-    "link": "https://minteddirectory.com"
+    "id": "docusaurus",
+    "title": "Docusaurus",
+    "description": "Easy to maintain open source documentation website generator by Facebook",
+    "link": "https://github.com/facebook/docusaurus",
+    "tags": ["react", "documentation", "generator"],
+    "featured": true
   },
   {
-    "id": "breath",
-    "title": "Breethe",
-    "card_image": "",
-    "description": "Provides guided meditations, inspirational talks, and supportive community features.",
-    "link": "https://minteddirectory.com"
+    "id": "erpsaas",
+    "title": "ERP SaaS",
+    "description": "Modern accounting platform powered by Laravel and Filament",
+    "link": "https://github.com/andrewdwallo/erpsaas",
+    "tags": ["laravel", "erp", "accounting"],
+    "featured": true
   },
   {
-    "id": "mylife",
-    "title": "MyLife Meditation",
-    "card_image": "",
-    "description": "Offers mood tracking and personalized meditation recommendations based on user emotions.",
-    "link": "https://minteddirectory.com"
+    "id": "doccano",
+    "title": "Doccano",
+    "description": "Open source text annotation tool for machine learning practitioners",
+    "link": "https://github.com/doccano/doccano",
+    "tags": ["python", "annotation", "ml"],
+    "featured": true
   },
   {
-    "id": "waking-up",
-    "title": "Waking Up",
-    "card_image": "",
-    "description": "Created by neuroscientist Sam Harris, offering guided meditations and philosophical insights.",
-    "link": "https://minteddirectory.com"
+    "id": "baserow",
+    "title": "Baserow",
+    "description": "Open source no-code database and Airtable alternative",
+    "link": "https://gitlab.com/briancaffey/baserow",
+    "tags": ["python", "database", "no-code"],
+    "featured": true
   },
   {
-    "id": "medito",
-    "title": "Medito",
-    "card_image": "",
-    "description": "A free meditation app with a variety of guided sessions and customizable features.",
-    "link": "https://minteddirectory.com"
+    "id": "saasterkit",
+    "title": "SaasterKit",
+    "description": "Next.js boilerplate kit for building modern SaaS applications",
+    "link": "https://github.com/leandroercoli/SaasterKit",
+    "tags": ["nextjs", "saas", "boilerplate"],
+    "featured": true
   },
   {
-    "id": "healthy-minds-program",
-    "title": "Healthy Minds Program",
-    "card_image": "",
-    "description": "Focuses on increasing awareness and well-being through guided meditations and podcast-style content.",
-    "link": "https://minteddirectory.com"
+    "id": "saas-starter",
+    "title": "Next.js SaaS Starter",
+    "description": "SaaS starter template with authentication and Stripe payments integration",
+    "link": "https://github.com/nextjs/saas-starter",
+    "tags": ["nextjs", "saas", "template"],
+    "featured": true
   },
   {
-    "id": "sattva",
-    "title": "Sattva",
-    "card_image": "",
-    "description": "Offers guided meditations, chants, and mantras, with a focus on ancient Vedic principles.",
-    "link": "https://minteddirectory.com"
+    "id": "store-pos",
+    "title": "Store POS",
+    "description": "Java-based point of sale software for retail and wholesale stores",
+    "link": "https://github.com/inforkgodara/store-pos",
+    "tags": ["java", "pos", "retail"],
+    "featured": true
   },
   {
-    "id": "mindfullness",
-    "title": "Mindfulness.com",
-    "card_image": "",
-    "description": "Provides a range of mindfulness meditations and courses for beginners and experienced practitioners.",
-    "link": "https://minteddirectory.com"
+    "id": "blueseer",
+    "title": "BlueSeer",
+    "description": "Free ERP and EDI solution with comprehensive business management features",
+    "link": "https://github.com/blueseerERP/blueseer",
+    "tags": ["java", "erp", "business"],
+    "featured": true
   },
   {
-    "id": "oak",
-    "title": "Oak",
-    "card_image": "",
-    "description": "A free meditation and breathing app with customizable sessions and progress tracking.",
-    "link": "https://minteddirectory.com"
+    "id": "flatnotes",
+    "title": "Flatnotes",
+    "description": "Self-hosted, database-less note taking web app using markdown files",
+    "link": "https://github.com/dullage/flatnotes",
+    "tags": ["python", "notes", "markdown"],
+    "featured": true
   },
   {
-    "id": "stop-breathe-think",
-    "title": "Stop, Breathe & Think",
-    "card_image": "",
-    "description": "Offers mindfulness and meditation activities tailored to user emotions and experiences.",
-    "link": "https://minteddirectory.com"
+    "id": "aliasvault",
+    "title": "AliasVault",
+    "description": "Self-hostable, end-to-end encrypted password and email alias manager",
+    "link": "https://github.com/lanedirt/AliasVault",
+    "tags": ["dotnet", "security", "privacy"],
+    "featured": true
   },
   {
-    "id": "mindfullness-app",
-    "title": "The Mindfulness App",
-    "card_image": "",
-    "description": "Provides guided and silent meditations with customizable session lengths and reminders.",
-    "link": "https://minteddirectory.com"
+    "id": "hemmelig",
+    "title": "Hemmelig",
+    "description": "Secure, encrypted secret sharing application with expiration and access controls",
+    "link": "https://github.com/HemmeligOrg/Hemmelig.app",
+    "tags": ["typescript", "security", "sharing"],
+    "featured": true
   },
   {
-    "id": "zenfie",
-    "title": "Zenfie",
-    "card_image": "",
-    "description": "Offers a variety of meditation techniques, including breathwork, sound baths, and guided journeys.",
-    "link": "https://minteddirectory.com"
+    "id": "viseron",
+    "title": "Viseron",
+    "description": "Self-hosted NVR and AI computer vision software for surveillance",
+    "link": "https://github.com/roflcoopter/viseron",
+    "tags": ["python", "surveillance", "ai"],
+    "featured": true
+  },
+  {
+    "id": "rocketchat",
+    "title": "Rocket.Chat",
+    "description": "Open-source team chat platform with voice, video, file sharing and real-time conversations",
+    "link": "https://github.com/RocketChat/Rocket.Chat",
+    "tags": ["node.js", "chat", "collaboration"],
+    "featured": true
+  },
+  {
+    "id": "atomic-crm",
+    "title": "Atomic CRM",
+    "description": "Modern, React-based CRM system built with React-Admin framework",
+    "link": "https://github.com/marmelab/atomic-crm",
+    "tags": ["react", "crm", "business"],
+    "featured": true
   }
 ]

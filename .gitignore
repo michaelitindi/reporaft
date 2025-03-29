@@ -22,3 +22,19 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# VS Code settings
+.vscode/
+
+# Local development files
+*.local
+
+# Cache directories
+.cache/
+.temp/
+
+# Coverage directory
+coverage/
+
+# Cloudflare specific
+.dev.vars
