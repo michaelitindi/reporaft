@@ -5,8 +5,8 @@ iconLogo = "tabler:license"
 
 [general.seo]
 name = "Reporaft"
-description = "A directory for finding cool projects that are licensed with MIT License."
-url = "https://nuxtstarters.com"
+description = "A directory for finding cool web app projects that are licensed with MIT License."
+url = "https://reporaft.com"
 
 [directory.data]
 source = "json"  # default, mock, sheets, json
@@ -108,7 +108,7 @@ target = "_blank"
 
 [header.actionButton]
 text = "Submit a Project"
-href = "https://github.com/michaelitindi/mitlicensedcode"
+href = "https://tally.so/r/mZQvk0"
 
 [footer]
 description = "Best directory for my niche."
