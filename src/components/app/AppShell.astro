@@ -7,7 +7,7 @@ import Banner from "./header/Banner.astro";
 
 <div>
   <Banner />
-  <Navbar />
+  <Navbar client:load />
   <slot />
   <Footer />
   <Posthog />
