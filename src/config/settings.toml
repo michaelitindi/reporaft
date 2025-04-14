@@ -101,10 +101,10 @@ colorModeSelector = true
 name = "Blog"
 href = "/blog"
 
-[[header.navbar.links]]
-name = "Analytics"
-href = "https://us.posthog.com/shared/vHlGCcSqPjGH4r_QijaXSETtmN9J-g"
-target = "_blank"
+#[[header.navbar.links]]
+#name = "Analytics"
+#href = "https://us.posthog.com/shared/vHlGCcSqPjGH4r_QijaXSETtmN9J-g"
+#target = "_blank"
 
 [header.actionButton]
 text = "Submit a Project"
