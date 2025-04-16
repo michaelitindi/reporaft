@@ -22,6 +22,12 @@ const calculatedTitle = title || siteTitle;
     <meta name="generator" content={Astro.generator} />
     <title>{calculatedTitle}</title>
     <link rel="stylesheet" href="https://cdn.indieboosting.com/latest/style.css"/>
+  </head>
+  <body class="bg-white dark:bg-gray-800">
+    <AppShell>
+        <div id="indie-boost-ad"></div>
+      <slot />
+    </AppShell>
    <script is:inline src="https://cdn.indieboosting.com/latest/script.js?id=5RYQ6RYP7Q"></script>
     <script is:inline>
       window.addEventListener('load', function() {
@@ -30,14 +36,5 @@ const calculatedTitle = title || siteTitle;
         }
       });
     </script>
-  </head>
-  <body class="bg-white dark:bg-gray-800">
-    <AppShell>
-      <div class="container mx-auto px-4 py-4">
-        <div id="indie-boost-ad"></div>
-      </div>
-      <slot />
-    </AppShell>
-   
   </body>
 </html>
