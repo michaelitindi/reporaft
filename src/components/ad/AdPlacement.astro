@@ -1,1 +1,11 @@
+---
+import { IndieBoosting } from "@indieboosting/react";
 
+interface Props {
+  channelId: string;
+}
+
+const { channelId } = Astro.props;
+---
+
+<IndieBoosting id={channelId} />

@@ -7,15 +7,12 @@ import sitemap from '@astrojs/sitemap';
 import { ViteToml } from 'vite-plugin-toml';
 import tailwindcss from '@tailwindcss/vite';
 
+import react from "@astrojs/react";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://reporaft.com",
-  integrations: [
-    vue(),
-    mdx(),
-    icon(),
-    sitemap()
-  ],
+  integrations: [vue(), mdx(), icon(), sitemap(), react()],
   vite: {
     plugins: [tailwindcss(), ViteToml()]
   },
