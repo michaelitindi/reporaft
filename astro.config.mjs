@@ -1,23 +1,22 @@
-// @ts-check
-import { defineConfig, envField } from 'astro/config';
+// https://astro.build/config
+import { defineConfig } from 'astro/config';
 import vue from '@astrojs/vue';
 import mdx from '@astrojs/mdx';
 import icon from 'astro-icon';
 import sitemap from '@astrojs/sitemap';
-import { ViteToml } from 'vite-plugin-toml';
-import tailwindcss from '@tailwindcss/vite';
+import react from '@astrojs/react';
+import tailwindcss from '@astrojs/tailwind';
+import ViteToml from '@iarna/vite-plugin-toml';
+import envField from '@astrojs/env-field';
 
-import react from "@astrojs/react";
-
-// https://astro.build/config
 export default defineConfig({
   site: "https://reporaft.com",
   integrations: [vue(), mdx(), icon(), sitemap(), react()],
   vite: {
     plugins: [tailwindcss(), ViteToml()],
-    resolve: {
-      alias: {
-        '@indieboosting/react': '@indieboosting/react/dist/index.js'
+    build: {
+      rollupOptions: {
+        external: ['@indieboosting/react']
       }
     }
   },
@@ -28,4 +27,4 @@ export default defineConfig({
       NOTION_TOKEN: envField.string({ context: "server", access: "secret", optional: true })
     }
   }
-});
+})
