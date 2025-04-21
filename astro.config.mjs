@@ -14,11 +14,7 @@ export default defineConfig({
   integrations: [vue(), mdx(), icon(), sitemap(), react()],
   vite: {
     plugins: [tailwindcss(), ViteToml()],
-    build: {
-      rollupOptions: {
-        external: ['@indieboosting/react']
-      }
-    }
+    
   },
   env: {
     schema: {
