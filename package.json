@@ -17,6 +17,7 @@
     "@astrojs/mdx": "^4.2.0",
     "@astrojs/react": "^4.2.4",
     "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/tailwind": "^6.0.2",
     "@astrojs/vue": "^5.0.7",
     "@fontsource/gabarito": "^5.1.0",
     "@headlessui/vue": "^1.7.23",
