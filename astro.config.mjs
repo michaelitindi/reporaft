@@ -3,6 +3,7 @@ import { defineConfig, envField } from 'astro/config';
 import vue from '@astrojs/vue';
 import mdx from '@astrojs/mdx';
 import icon from 'astro-icon';
+import react from "@astrojs/react";
 import sitemap from '@astrojs/sitemap';
 import { ViteToml } from 'vite-plugin-toml';
 import tailwindcss from '@tailwindcss/vite';
@@ -12,6 +13,7 @@ export default defineConfig({
   site: "https://reporaft.com",
   integrations: [
     vue(),
+    react(),
     mdx(),
     icon(),
     sitemap()
