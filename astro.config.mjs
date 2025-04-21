@@ -22,7 +22,7 @@ export default defineConfig({
     plugins: [tailwindcss(), ViteToml()],
     resolve: {
       alias: {
-        '@indieboosting/react': require.resolve('@indieboosting/react')
+        '@indieboosting/react': '@indieboosting/react'
       }
     }
   },
