@@ -1,6 +1,5 @@
 ---
-import '@indieboosting/react/indieboosting.css';
-import { IndieBoosting } from "@indieboosting/react";
+import IndieBoostingWrapper from "./IndieBoostingWrapper.jsx";
 
 interface Props {
   channelId: string;
@@ -9,4 +8,4 @@ interface Props {
 const { channelId } = Astro.props;
 ---
 
-<IndieBoosting id={channelId} client:load/>
+<IndieBoostingWrapper id={channelId} client:load/>
