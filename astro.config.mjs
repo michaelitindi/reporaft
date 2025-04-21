@@ -19,8 +19,15 @@ export default defineConfig({
     sitemap()
   ],
   vite: {
-    plugins: [tailwindcss(), ViteToml()]
+    plugins: [tailwindcss(), ViteToml()],
+    resolve: {
+      alias: {
+        '@indieboosting/react': require.resolve('@indieboosting/react')
+      }
+    }
   },
+
+
   env: {
     schema: {
       POSTHOG_API_KEY: envField.string({ context: "client", access: "public", optional: true }),
