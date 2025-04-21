@@ -14,7 +14,12 @@ export default defineConfig({
   site: "https://reporaft.com",
   integrations: [vue(), mdx(), icon(), sitemap(), react()],
   vite: {
-    plugins: [tailwindcss(), ViteToml()]
+    plugins: [tailwindcss(), ViteToml()],
+    resolve: {
+      alias: {
+        '@indieboosting/react': '@indieboosting/react/dist/index.js'
+      }
+    }
   },
   env: {
     schema: {
