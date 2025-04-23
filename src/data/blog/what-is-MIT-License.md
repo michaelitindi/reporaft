@@ -1,6 +1,6 @@
 ---
 
-title: Understanding the MIT License: What Developers Need to Know in 2025
+title: Understanding the MIT License. What Developers Need to Know in 2025
 description: An explainer on MIT License .
 ---
 
