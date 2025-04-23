@@ -5,7 +5,7 @@
     "description": "A free and open source Laravel-based Product Information Management (PIM) system",
     "link": "https://github.com/unopim/unopim",
     "tags": ["laravel", "pim", "management"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "aureuserp",
@@ -13,7 +13,7 @@
     "description": "Free and Open Source ERP platform built on Laravel",
     "link": "https://github.com/aureuserp/aureuserp",
     "tags": ["laravel", "erp", "business"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "umami",
@@ -21,7 +21,7 @@
     "description": "Simple, fast, privacy-focused alternative to Google Analytics",
     "link": "https://github.com/umami-software/umami",
     "tags": ["javascript", "analytics", "tracking"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "ghost",
@@ -29,7 +29,7 @@
     "description": "Professional publishing platform built on Node.js",
     "link": "https://github.com/TryGhost/Ghost",
     "tags": ["node.js", "cms", "publishing"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "oxygen",
@@ -45,7 +45,7 @@
     "description": "Free and open source Laravel CRM solution",
     "link": "https://github.com/krayin/laravel-crm",
     "tags": ["laravel", "crm", "business"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "hotelhub",
@@ -53,7 +53,7 @@
     "description": "Advanced hotel booking management system with multi-user roles support",
     "link": "https://github.com/KhaledAshrafH/HotelHub",
     "tags": ["java", "booking", "management"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "minted-directory",
@@ -61,7 +61,7 @@
     "description": "Markdown-driven directory template built with Astro and TailwindCSS",
     "link": "https://github.com/masterkram/minted-directory-astro",
     "tags": ["astro", "directory", "template"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "docusaurus",
@@ -69,7 +69,7 @@
     "description": "Easy to maintain open source documentation website generator by Facebook",
     "link": "https://github.com/facebook/docusaurus",
     "tags": ["react", "documentation", "generator"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "erpsaas",
@@ -77,7 +77,7 @@
     "description": "Modern accounting platform powered by Laravel and Filament",
     "link": "https://github.com/andrewdwallo/erpsaas",
     "tags": ["laravel", "erp", "accounting"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "doccano",
@@ -85,7 +85,7 @@
     "description": "Open source text annotation tool for machine learning practitioners",
     "link": "https://github.com/doccano/doccano",
     "tags": ["python", "annotation", "ml"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "baserow",
@@ -93,7 +93,7 @@
     "description": "Open source no-code database and Airtable alternative",
     "link": "https://gitlab.com/briancaffey/baserow",
     "tags": ["python", "database", "no-code"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "saasterkit",
@@ -101,7 +101,7 @@
     "description": "Next.js boilerplate kit for building modern SaaS applications",
     "link": "https://github.com/leandroercoli/SaasterKit",
     "tags": ["nextjs", "saas", "boilerplate"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "saas-starter",
@@ -109,7 +109,7 @@
     "description": "SaaS starter template with authentication and Stripe payments integration",
     "link": "https://github.com/nextjs/saas-starter",
     "tags": ["nextjs", "saas", "template"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "store-pos",
@@ -117,7 +117,7 @@
     "description": "Java-based point of sale software for retail and wholesale stores",
     "link": "https://github.com/inforkgodara/store-pos",
     "tags": ["java", "pos", "retail"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "blueseer",
@@ -125,7 +125,7 @@
     "description": "Free ERP and EDI solution with comprehensive business management features",
     "link": "https://github.com/blueseerERP/blueseer",
     "tags": ["java", "erp", "business"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "flatnotes",
@@ -133,7 +133,7 @@
     "description": "Self-hosted, database-less note taking web app using markdown files",
     "link": "https://github.com/dullage/flatnotes",
     "tags": ["python", "notes", "markdown"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "aliasvault",
@@ -141,7 +141,8 @@
     "description": "Self-hostable, end-to-end encrypted password and email alias manager",
     "link": "https://github.com/lanedirt/AliasVault",
     "tags": ["dotnet", "security", "privacy"],
-    "featured": true
+    "featured": false
+
   },
   {
     "id": "hemmelig",
@@ -149,7 +150,7 @@
     "description": "Secure, encrypted secret sharing application with expiration and access controls",
     "link": "https://github.com/HemmeligOrg/Hemmelig.app",
     "tags": ["typescript", "security", "sharing"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "viseron",
@@ -157,7 +158,7 @@
     "description": "Self-hosted NVR and AI computer vision software for surveillance",
     "link": "https://github.com/roflcoopter/viseron",
     "tags": ["python", "surveillance", "ai"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "rocketchat",
@@ -165,7 +166,7 @@
     "description": "Open-source team chat platform with voice, video, file sharing and real-time conversations",
     "link": "https://github.com/RocketChat/Rocket.Chat",
     "tags": ["node.js", "chat", "collaboration"],
-    "featured": true
+    "featured": false
   },
   {
     "id": "atomic-crm",
@@ -173,6 +174,6 @@
     "description": "Modern, React-based CRM system built with React-Admin framework",
     "link": "https://github.com/marmelab/atomic-crm",
     "tags": ["react", "crm", "business"],
-    "featured": true
+    "featured": false
   }
 ]
