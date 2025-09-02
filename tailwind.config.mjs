@@ -8,11 +8,13 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Gabarito'],
+                sans: ['Gabarito', 'sans-serif'],
+                mono: ['Source Code Pro', 'monospace'],
             },
             colors: {
                 primary: colors.sky,
                 gray: colors.zinc,
+                neutral: colors.zinc, // Adding neutral colors since they were referenced
             }
         },
     },
