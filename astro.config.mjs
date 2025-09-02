@@ -6,7 +6,7 @@ import icon from 'astro-icon';
 import react from "@astrojs/react";
 import sitemap from '@astrojs/sitemap';
 import { ViteToml } from 'vite-plugin-toml';
-import tailwindcss from '@tailwindcss/vite';
+import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,14 +16,12 @@ export default defineConfig({
     react(),
     mdx(),
     icon(),
-    sitemap()
+    sitemap(),
+    tailwind()
   ],
   vite: {
-    plugins: [...[tailwindcss(), ViteToml()]],
-    
+    plugins: [ViteToml()]
   },
-
-
   env: {
     schema: {
       POSTHOG_API_KEY: envField.string({ context: "client", access: "public", optional: true }),
