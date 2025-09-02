@@ -1,0 +1,149 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="sitemap" href="/sitemap-index.xml"><meta name="generator" content="Astro v5.5.2"><title>Reporaft</title><link rel="stylesheet" href="https://cdn.indieboosting.com/latest/style.css"><link rel="stylesheet" href="/_astro/_slug_.B3K4uOMZ.css"></head> <body class="bg-white dark:bg-gray-800"> <div id="indie-boost-ad"></div> <div>  <nav class="bg-white dark:bg-gray-700 w-full z-20 start-0 border-b border-gray-200 dark:border-gray-600"> <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"> <div class="flex items-center gap-x-12"> <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-7 h-7 text-gray-600 dark:text-white" data-icon="tabler:license">  <symbol id="ai:tabler:license"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 21H6a3 3 0 0 1-3-3v-1h10v2a2 2 0 0 0 4 0V5a2 2 0 1 1 2 2h-2m2-4H8a3 3 0 0 0-3 3v11M9 7h4m-4 4h4"/></symbol><use  xlink:href="#ai:tabler:license"></use>  </svg> <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Reporaft</span> </a> <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky"> <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-700 md:dark:bg-gray-700 dark:border-gray-700"> <li> <a href="/blog" target="_self" class="font-medium inline-flex py-2 px-3 text-white bg-primary-700 rounded md:bg-transparent md:text-gray-700 md:p-0 md:dark:text-gray-300" aria-current="page"> Blog  </a> </li> </ul> </div> </div> <div class="flex gap-2 items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"> <span id="astro-color-scheme-switch" data-astro-cid-sav2uqyf="true">  <button class="flex justify-center items-center border border-gray-200 rounded-full w-8 h-8 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 dark:border-gray-500 transition-all"> <span class="sr-only">Toggle Theme</span> <svg width="1em" height="1em" viewBox="0 0 24 24" class="hidden dark:block" data-icon="tabler:moon">  <symbol id="ai:tabler:moon"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"/></symbol><use  xlink:href="#ai:tabler:moon"></use>  </svg> <svg width="1em" height="1em" viewBox="0 0 24 24" class="dark:hidden" data-icon="tabler:sun">  <symbol id="ai:tabler:sun"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0-8 0m-5 0h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7l-.7.7m0 11.4l.7.7m-12.1-.7l-.7.7"/></symbol><use  xlink:href="#ai:tabler:sun"></use>  </svg> </button>  </span>  <script>(function(){const strategy = "button";
+const defaultTheme = "system";
+
+  const themeSwitch = document.getElementById("astro-color-scheme-switch");
+  const theme = localStorage.getItem("theme");
+  const themeMatcher = window.matchMedia("(prefers-color-scheme: dark)");
+  let systemTheme = themeMatcher.matches ? "dark" : "light";
+
+  themeMatcher.addEventListener("change", (event) => {
+    const theme = event.matches ? "dark" : "light";
+    systemTheme = theme;
+    if (localStorage.getItem("theme") === "system") {
+      updateAppliedTheme(theme);
+    }
+  });
+
+  function updateAppliedTheme(value) {
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(value);
+    document.documentElement.setAttribute("data-theme", value);
+  }
+
+  function updateTheme(value) {
+    const theme = value === "system" ? systemTheme : value;
+    updateAppliedTheme(theme);
+    localStorage.setItem("theme", value);
+  }
+
+  function setupThemeSwitch(selector, eventType, themeUpdater) {
+    const element = themeSwitch.querySelector(selector);
+    if (!element) {
+      throw new Error(
+        `plugin-astro-color-scheme: <${selector}> element must be present inside 'themeSwitch' or change the 'strategy' attribute`
+      );
+    }
+
+    if (selector === "form") {
+      element.value = theme || defaultTheme || systemTheme;
+      Array.from(element.querySelectorAll("input")).forEach((input) => {
+        input.checked = (theme || defaultTheme || systemTheme) === input.value;
+      });
+    } else {
+      element.value = theme || defaultTheme || systemTheme;
+    }
+
+    if (selector === "input") {
+      element.checked = defaultTheme !== element.value;
+    }
+
+    updateTheme(element.value);
+    element.addEventListener(eventType, themeUpdater);
+  }
+
+  if (!strategy) {
+      throw new Error(
+        `plugin-astro-color-scheme: Please add a 'strategy' attribute to <ThemeSwitch/>`
+      );
+    }
+
+  switch (strategy) {
+    case "button":
+      setupThemeSwitch("button", "click", (event) => {
+        const button = event.currentTarget;
+        const settheme = button.value === "dark" ? "light" : "dark";
+        button.value = settheme;
+        updateTheme(settheme);
+      });
+      break;
+    case "select":
+      setupThemeSwitch("select", "change", (event) => {
+        const select = event.currentTarget;
+        updateTheme(select.value);
+      });
+      break;
+    case "checkbox":
+      setupThemeSwitch("input", "change", (event) => {
+        const checkbox = event.currentTarget;
+        const settheme = checkbox.value === "dark" ? "light" : "dark";
+        checkbox.value = settheme;
+        updateTheme(settheme);
+      });
+      break;
+    case "radio":
+      setupThemeSwitch("form", "click", (event) => {
+        updateTheme(event.currentTarget.value);
+      });
+      break;
+    default:
+      updateTheme(theme || defaultTheme || systemTheme);
+  }
+})();</script> <a href="https://tally.so/r/mZQvk0" class="hidden focus:outline-none disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:cursor-not-allowed aria-disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 shadow-sm text-white dark:text-gray-900 bg-primary-500 hover:bg-primary-600 disabled:bg-primary-500 aria-disabled:bg-primary-500 dark:bg-primary-400 dark:hover:bg-primary-500 dark:disabled:bg-primary-400 dark:aria-disabled:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 dark:focus-visible:outline-primary-400 md:inline-flex items-center"> Submit a Project </a> <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false"> <span class="sr-only">Open main menu</span> <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"> <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path> </svg> </button> </div> </div> </nav>  <div class="container mx-auto px-4 py-4"></div>  <div class="max-w-2xl w-full mx-auto py-20"> <main class="max-w-none font-display prose dark:prose-invert prose-pre:bg-gray-100 dark:prose-pre:bg-gray-900 hover:prose-a:text-primary-400 prose-a:font-normal prose-a:no-underline prose-a:border-dashed prose-a:border-b hover:prose-a:border-solid hover:prose-a:border-primary-400 prose-headings:text-gray-800 dark:prose-headings:text-gray-100 prose-a:border-gray-400 dark:prose-a:border-gray-400 dark:hover:prose-a:border-primary-400">   <h1 id="why-447-of-github-projects-choose-mit-license-over-apache-20">Why 44.7% of GitHub Projects Choose MIT License Over Apache 2.0</h1>
+<p>When developers reach the moment of choosing an open source license for their project, they face a critical decision that will impact how their code can be used, modified, and distributed. The numbers tell a compelling story: according to official GitHub data, the MIT License dominates the landscape with 44.7% of all licensed projects, while Apache 2.0 holds 11.2% of the market share.</p>
+<p>This nearly 4-to-1 preference for MIT over Apache isn’t arbitrary—it reflects fundamental differences in how developers think about software freedom, legal complexity, and project accessibility.</p>
+<h2 id="the-numbers-dont-lie">The Numbers Don’t Lie</h2>
+<p>GitHub’s official license usage statistics reveal that MIT License accounts for 44.69% of licensed projects, making it the clear leader, while Apache License claims 11.19% of projects. Together, Apache 2.0 and MIT License comprise over 50% of all open source licenses currently in use, establishing them as the two dominant permissive licenses in the ecosystem.</p>
+<p>What makes this data particularly significant is that the MIT License has maintained its position as the most popular software license on GitHub in both 2015 and 2025, showing remarkable consistency over a decade of rapid open source growth.</p>
+<h2 id="simplicity-wins-the-mit-advantage">Simplicity Wins: The MIT Advantage</h2>
+<p>The MIT License’s popularity stems from its radical simplicity. At just 171 words, it’s one of the shortest open source licenses available, stating essentially: “Do whatever you want with this code, just include the original license and don’t blame us if something goes wrong.”</p>
+<p>This simplicity translates into practical advantages that developers clearly value:</p>
+<ul>
+<li><strong>Legal Clarity</strong>: MIT’s brevity means fewer legal ambiguities. Corporate legal teams can review and approve MIT-licensed dependencies quickly, reducing friction in enterprise adoption.</li>
+<li><strong>Developer Accessibility</strong>: New contributors don’t need to understand complex legal frameworks to participate in MIT-licensed projects.</li>
+<li><strong>Maximum Permissiveness</strong>: MIT places minimal restrictions on usage, making it ideal for libraries and frameworks where broad adoption is the primary goal.</li>
+</ul>
+<h2 id="apache-20-when-you-need-more-protection">Apache 2.0: When You Need More Protection</h2>
+<p>Despite MIT’s popularity, Apache 2.0 serves specific needs that MIT cannot address. If developers desire the assurance of patent protection, Apache 2.0 is the better choice. The Apache License includes explicit patent grants and patent retaliation clauses that MIT lacks entirely.</p>
+<p>Apache 2.0 provides several advantages for larger projects:</p>
+<ul>
+<li><strong>Patent Protection</strong>: Apache 2.0 includes explicit patent grants from contributors, offering legal protection against patent litigation.</li>
+<li><strong>Contribution Guidelines</strong>: The license requires clear attribution of changes and contributions, making it easier to track modifications and maintain project history.</li>
+<li><strong>Corporate Backing</strong>: Many large corporations prefer Apache 2.0 for projects they sponsor because of its more comprehensive legal framework.</li>
+</ul>
+<h2 id="the-enterprise-perspective">The Enterprise Perspective</h2>
+<p>Permissive licenses place minimal restrictions on how others can use open source components, which explains their dominance in enterprise environments. However, the choice between MIT and Apache often comes down to specific organizational needs.</p>
+<p>Companies building consumer-facing products often gravitate toward MIT because it imposes fewer compliance requirements. The simplicity means development teams can integrate MIT-licensed components without extensive legal review processes.</p>
+<p>Conversely, organizations operating in patent-sensitive industries—such as telecommunications, automotive, or enterprise software—frequently prefer Apache 2.0’s explicit patent provisions. The additional legal protection justifies the slightly more complex license terms.</p>
+<h2 id="real-world-impact-on-project-success">Real-World Impact on Project Success</h2>
+<p>The license choice affects more than legal compliance; it influences community dynamics and adoption rates. Notable projects that use the MIT License include the X Window System, Ruby on Rails, Node.js, Lua, jQuery, .NET, Angular, and React. These projects share common characteristics: broad ecosystem adoption, extensive commercial usage, and vibrant contributor communities.</p>
+<p>MIT’s permissiveness removes barriers to experimentation and integration. Developers can freely incorporate MIT-licensed code into proprietary products, leading to wider usage and, consequently, more bug reports, feature requests, and contributions back to the original project.</p>
+<h2 id="making-the-right-choice-for-your-project">Making the Right Choice for Your Project</h2>
+<p>The 44.7% preference for MIT suggests that most projects benefit from maximum permissiveness, but the decision should align with your specific goals:</p>
+<h3 id="choose-mit-when">Choose MIT when:</h3>
+<ul>
+<li>Building libraries or frameworks where broad adoption is critical</li>
+<li>Targeting individual developers and small teams</li>
+<li>Prioritizing simplicity and minimal legal overhead</li>
+<li>Creating projects where patent concerns are minimal</li>
+</ul>
+<h3 id="choose-apache-20-when">Choose Apache 2.0 when:</h3>
+<ul>
+<li>Developing enterprise-focused software</li>
+<li>Operating in patent-sensitive domains</li>
+<li>Requiring explicit contributor attribution</li>
+<li>Planning significant corporate backing or governance</li>
+</ul>
+<h2 id="the-future-of-permissive-licensing">The Future of Permissive Licensing</h2>
+<p>MIT, Apache, and GPL are the clear front runners, with some 15% of licensed projects opting for a non-standard license. This concentration suggests the open source community has largely settled on these proven licensing approaches.</p>
+<p>As open source continues its march into enterprise environments and critical infrastructure, the balance between MIT’s simplicity and Apache’s comprehensiveness will likely remain a central consideration for project creators.</p>
+<p>The statistics speak clearly: when developers prioritize accessibility and broad adoption, MIT License emerges as the overwhelming favorite. Its four-to-one advantage over Apache 2.0 reflects a community-wide preference for removing barriers to software freedom, even at the cost of some legal protections.</p>
+<hr>
+<p><em>Looking for MIT-licensed projects for your next development initiative? Explore the curated collection at <a href="https://reporaft.com">reporaft.com</a> to discover enterprise-ready, permissively licensed solutions across multiple technology stacks.</em></p>   </main> </div>   <footer class="border-t border-gray-200 dark:border-gray-600 font-display" aria-labelledby="footer-heading"> <h2 id="footer-heading" class="sr-only">Footer</h2> <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32"> <div class="xl:grid xl:grid-cols-3 xl:gap-8"> <div class="space-y-8"> <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-7 h-7 text-gray-600 dark:text-white" data-icon="tabler:license">  <use  xlink:href="#ai:tabler:license"></use>  </svg> <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Reporaft</span> </a> <div class="flex space-x-6"> <a href="https://x.com/mark_bruderer" class="text-gray-400 hover:text-gray-500"> <span class="sr-only">[object Object]</span> <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-6 w-6" aria-hidden="true" data-icon="tabler:brand-twitter">  <symbol id="ai:tabler:brand-twitter"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 4.01c-1 .49-1.98.689-3 .99c-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4c0 0-4.182 7.433 4 11c-1.872 1.247-3.739 2.088-6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58-1.04 6.522-3.723 7.651-7.742a13.8 13.8 0 0 0 .497-3.753c0-.249 1.51-2.772 1.818-4.013z"/></symbol><use  xlink:href="#ai:tabler:brand-twitter"></use>  </svg> </a><a href="https://www.youtube.com/@mark_hacks" class="text-gray-400 hover:text-gray-500"> <span class="sr-only">[object Object]</span> <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-6 w-6" aria-hidden="true" data-icon="tabler:brand-youtube">  <symbol id="ai:tabler:brand-youtube"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 8a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="m10 9l5 3l-5 3z"/></g></symbol><use  xlink:href="#ai:tabler:brand-youtube"></use>  </svg> </a> </div> </div> <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0"> <div class="md:grid md:grid-cols-2 md:gap-8"> <div> <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase"> Directory </h3> <ul role="list" class="mt-6 space-y-4"> <li> <a href="/submit" class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:dark:text-gray-400 hover:text-gray-900"> Submit </a> </li><li> <a href="/advertise" class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:dark:text-gray-400 hover:text-gray-900"> Advertise </a> </li> </ul> </div> <div class="mt-10 md:mt-0"> <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase"> Blog </h3> <ul role="list" class="mt-6 space-y-4"> <li> <a href="/blog" class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:dark:text-gray-400 hover:text-gray-900"> Articles </a> </li> </ul> </div> </div><div class="md:grid md:grid-cols-2 md:gap-8"> <div> <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase"> Categories </h3> <ul role="list" class="mt-6 space-y-4"> <li> <a href="/tags/Frameworks" class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:dark:text-gray-400 hover:text-gray-900"> Frameworks </a> </li><li> <a href="/tags/Libraries" class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:dark:text-gray-400 hover:text-gray-900"> Libraries </a> </li><li> <a href="/tags/JavaScript" class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:dark:text-gray-400 hover:text-gray-900"> JavaScript </a> </li><li> <a href="/tags/Python" class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:dark:text-gray-400 hover:text-gray-900"> Python </a> </li> </ul> </div> <div class="mt-10 md:mt-0"> <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase"> Legal </h3> <ul role="list" class="mt-6 space-y-4"> <li> <a href="/legal/terms-of-service" class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:dark:text-gray-400 hover:text-gray-900"> Privacy Policy </a> </li><li> <a href="/legal/privacy-policy" class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:dark:text-gray-400 hover:text-gray-900"> Terms of Service </a> </li> </ul> </div> </div> </div> </div> <div class="mt-16 border-t border-gray-900/10 dark:border-gray-600 pt-8 sm:mt-20 lg:mt-24"> <p class="text-xs leading-5 text-gray-500">
+&copy; 2025 Reporaft All rights reserved.
+</p> </div> </div> </footer> </div> <script src="https://cdn.indieboosting.com/latest/script.js?id=5RYQ6RYP7Q"></script> <script>
+      window.addEventListener('load', function() {
+        if (typeof IndieBoost !== 'undefined') {
+          IndieBoost.init();
+        }
+      });
+    </script> </body> </html>
