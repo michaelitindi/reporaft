@@ -50,7 +50,7 @@ const headerColor = tagColors[primaryTag as TagColorKey] || tagColors.default;
       { myItem.description }
     </p>
     <div class="mt-4 flex items-center text-sm text-gray-600 dark:text-gray-400 font-medium group-hover:text-gray-900 dark:group-hover:text-gray-200">
-      <span class="mr-2">View Project</span>
+      <span class="mr-2">{item.isBlogPost ? "View Blog" : "View Project"}</span>
       <span class="icon-tabler:arrow-right group-hover:translate-x-1 transition-transform duration-200"></span>
     </div>
   </div>
