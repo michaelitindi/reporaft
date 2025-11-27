@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: License Compliance - What 56% of Companies Get Wrong About MIT Projects
 description: Discover the shocking truth about open source license violations - how 56% of commercial applications have license conflicts and what companies commonly misunderstand about MIT license requirements
 ---

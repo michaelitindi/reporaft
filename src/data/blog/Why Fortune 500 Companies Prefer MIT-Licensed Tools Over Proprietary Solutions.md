@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: Why Fortune 500 Companies Prefer MIT-Licensed Tools Over Proprietary Solutions
 description: Explore how Fortune 500 companies like Walmart, Amazon, and Apple are choosing MIT-licensed open source solutions over proprietary software for cost savings, innovation speed, and strategic flexibility
 ---

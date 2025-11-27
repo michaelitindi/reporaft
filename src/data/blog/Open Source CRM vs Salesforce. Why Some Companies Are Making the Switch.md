@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: Open Source CRMs vs Salesforce - Why Some Companies Are Making the Switch
 description: Discover why companies are switching from Salesforce's expensive subscription model to open source CRM alternatives, saving up to 37% on technology costs while reducing implementation timelines by 70%
 ---

@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: 96% of Organizations Increased Open Source Usage - What This Means for MIT Projects
 description: Discover how the massive surge in enterprise open source adoption - with 96% of organizations increasing usage and 25.7% reporting significant growth - creates unprecedented opportunities for MIT-licensed projects
 ---

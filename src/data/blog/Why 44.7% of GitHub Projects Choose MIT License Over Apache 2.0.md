@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: Why 44.7% of GitHub Projects Choose MIT License Over Apache 2.0
 description: An analysis of why MIT License dominates open source licensing choices over Apache 2.0
 ---

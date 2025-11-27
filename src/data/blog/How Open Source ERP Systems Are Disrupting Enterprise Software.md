@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: How Open Source ERP Systems Are Disrupting Enterprise Software
 description: Discover how open source ERP systems are challenging Oracle's $8.7B and SAP's $8.6B market dominance by offering cost-effective alternatives that eliminate expensive licensing fees while providing enterprise-grade functionality
 ---

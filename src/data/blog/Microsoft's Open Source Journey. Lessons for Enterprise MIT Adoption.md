@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: Microsoft's Open Source Journey - Lessons for Enterprise MIT Adoption
 description: Discover how Microsoft transformed from calling Linux a cancer to becoming the leading corporate contributor to open source, with .NET Core using MIT License and accepting over 100,000 contributions from 3,700+ companies
 ---

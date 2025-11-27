@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: MIT License in 2025 - Why It Remains the Gold Standard for Startups
 description: Discover why MIT License continues to dominate startup open source strategies in 2025, with one-third of GitHub projects choosing MIT despite venture capital trends favoring Apache-licensed companies
 ---

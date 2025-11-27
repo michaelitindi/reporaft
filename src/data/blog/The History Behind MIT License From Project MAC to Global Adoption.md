@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: The History Behind MIT License - From Project MAC to Global Adoption
 description: Explore the fascinating journey of MIT License from its origins in 1960s Project MAC through the X Window System to becoming the most popular open source license with 44.7% market share
 ---

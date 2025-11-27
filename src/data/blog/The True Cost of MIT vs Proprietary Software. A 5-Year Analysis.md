@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: The True Cost of MIT vs Proprietary Software - A 5-Year Analysis
 description: Comprehensive 5-year Total Cost of Ownership analysis comparing MIT-licensed open source software versus proprietary solutions, revealing hidden costs and long-term financial implications for enterprise decision-makers
 ---

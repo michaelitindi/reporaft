@@ -1,5 +1,5 @@
 ---
-
+layout: ../../../layouts/Blog.astro
 title: Understanding the MIT License.
 description: An explainer on MIT License .
 ---

@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: MIT License Red Flags - When Simple Isn't Always Better
 description: Discover the hidden risks and limitations of MIT License that 44.7% of developers overlook - from patent vulnerabilities to attribution compliance breakdown and community sustainability issues
 ---

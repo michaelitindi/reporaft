@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: Enterprise Legal Teams' Checklist for MIT-Licensed Dependencies
 description: Essential compliance checklist for corporate legal departments managing MIT-licensed software dependencies - covering attribution requirements, risk assessment, and ongoing monitoring strategies
 ---

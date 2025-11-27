@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: How MIT License Became the Most Enterprise-Friendly Open Source License
 description: Discover why MIT License dominates enterprise software with 92% adoption in audited commercial applications and how it became the gold standard for corporate-friendly open source
 ---

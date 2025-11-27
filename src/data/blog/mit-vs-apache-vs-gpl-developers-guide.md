@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/Blog.astro
 title: MIT vs Apache 2.0 vs GPL - A Developer's Guide to License Selection
 description: A comprehensive comparison of the most popular open source licenses and how to choose the right one for your project
 ---
